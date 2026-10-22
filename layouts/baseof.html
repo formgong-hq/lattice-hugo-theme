@@ -1,0 +1,31 @@
+{{- $c := hugo.Data.content -}}
+<!doctype html>
+<html lang="{{ $c.site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ $c.site.title }}{{ else }}{{ .Title }} · {{ $c.site.name }}{{ end }}</title>
+<meta name="description" content="{{ $c.site.description }}">
+<link rel="icon" href="data:,">
+{{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}
+<script>// Layout mode before first paint: L = pinned screens on a fixed grid, F = flowing page on a scrolling grid.
+  // "lines" hides boxes until they scroll into view, then slides them in and draws their frames.
+  // The intro plays once per tab session and never for reduced motion.
+  (function () {
+    var root = document.documentElement;
+    root.classList.add("js", innerWidth > 860 ? "L" : "F");
+    try {
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches && !sessionStorage.getItem("lattice-intro")) root.classList.add("js-intro");
+    } catch (e) {}
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) root.classList.add("lines");
+  })();</script>
+<link rel="stylesheet" href="{{ "site.css" | relURL }}">
+</head>
+<body>
+{{ partial "sections/header.html" . }}
+{{ block "main" . }}{{ end }}
+{{ partial "sections/footer.html" . }}
+<script>window.FG_IMG="/img/";</script>
+<script src="{{ "site.js" | relURL }}" defer></script>
+</body>
+</html>

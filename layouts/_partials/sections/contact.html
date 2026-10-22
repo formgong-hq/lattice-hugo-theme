@@ -1,0 +1,49 @@
+{{- $c := hugo.Data.content -}}
+<section class="sec contact" id="contact" aria-labelledby="contact-h">
+    <div class="screen">
+      <div class="head" data-k="c-head" data-snap>
+        <p class="sub" data-reveal>{{ $c.contact.p_1 }}</p>
+        <h2 id="contact-h" data-reveal style="--d:.08s"><span>{{ $c.contact.span_2 }}</span> <span>{{ $c.contact.span_3 }}</span></h2>
+      </div>
+      <div class="c-info">
+        <ul class="b box" data-k="box1" data-snap>
+          <li><a href="mailto:hello@example.com">{{ $c.contact.a_4 }}</a></li>
+          <li><a href="tel:+351912345678">{{ $c.contact.a_5 }}</a></li>
+          <li><a href="https://t.me/example" rel="noopener">{{ $c.contact.a_6 }}</a></li>
+        </ul>
+        <div class="b box" data-k="box2" data-snap>
+          <p>{{ $c.contact.p_7 }}</p>
+          <p>{{ $c.contact.p_8 }}</p>
+          <p class="mono">{{ $c.contact.p_9 }}</p>
+        </div>
+      </div>
+      <div class="b c-orb" data-k="c-orb" data-rows="4" data-orb="dust" data-orb-color="white" data-orb-scale=".3"></div>
+
+      
+      <form id="fg-form" class="c-form" data-k="form" action="{{ site.Params.formAction | default "https://formgong.com/submit" }}" method="POST" enctype="multipart/form-data" data-sitekey>
+        <input type="hidden" name="access_key" value="{{ $c.form.access_key }}">
+        <input type="hidden" name="_lang" value="en">
+        <div aria-hidden="true" style="position:absolute;inset-inline-start:0;top:0;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)"><label>{{ $c.contact.text_10 }}<input name="botcheck" tabindex="-1" autocomplete="off"></label></div>
+        <div class="b f"><label for="f-name">{{ $c.contact.label_11 }}</label><input id="f-name" name="name" type="text" required maxlength="80" autocomplete="name" placeholder="Your name"></div>
+        <div class="b f"><label for="f-email">{{ $c.contact.label_12 }}</label><input id="f-email" name="email" type="email" required maxlength="120" autocomplete="email" placeholder="you@company.com"></div>
+        <div class="b f" data-phone-field><label for="f-phone">{{ $c.contact.label_13 }}</label><input id="f-phone" name="phone" type="tel" maxlength="40" autocomplete="tel" placeholder="+351 …"></div>
+        <div class="b f msg"><label for="f-message">{{ $c.contact.label_14 }}</label><textarea id="f-message" name="message" required maxlength="3000" placeholder="What are you building, and by when?"></textarea></div>
+        
+        <div class="b" data-turnstile hidden></div>
+        <button class="b btn send" type="submit"><span data-send-label>{{ $c.contact.span_15 }}</span><span class="arrow" aria-hidden="true">→</span></button>
+        <p class="status" data-status role="status"></p>
+        <div class="b sent" tabindex="-1">
+          <p class="label">{{ $c.contact.p_16_html | safeHTML }}</p>
+          <p>{{ $c.contact.p_17_html | safeHTML }}</p>
+          <button type="button" class="b btn again" data-again>{{ $c.contact.button_18 }}</button>
+        </div>
+      </form>
+
+      <div class="foot">
+        <p class="b" data-k="f-copy"><span>{{ $c.contact.span_19_html | safeHTML }}</span></p>
+        <a class="b" href="#" data-k="f-priv">{{ $c.contact.a_20 }}</a>
+        <a class="b" href="#" data-k="f-terms">{{ $c.contact.a_21 }}</a>
+        <a class="b" href="https://formgong.com" rel="noopener" data-k="f-credit">{{ $c.contact.a_22 }}</a>
+      </div>
+    </div>
+  </section>

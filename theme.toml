@@ -1,0 +1,11 @@
+name = "Lattice"
+license = "MIT"
+licenselink = "https://github.com/formgong-hq/lattice-hugo-theme/blob/main/LICENSE"
+description = "A dark, motion-led one-page site for a creative developer or a small studio. The contact form posts to Formgong and shows \"received\" only when the server answers success: true; any other answer shows the server's message."
+homepage = "https://github.com/formgong-hq/lattice-hugo-theme"
+demosite = "https://lattice.formgong.com"
+tags = ["landing","business","portfolio","contact","responsive","dark"]
+
+[author]
+  name = "Formgong"
+  homepage = "https://formgong.com"

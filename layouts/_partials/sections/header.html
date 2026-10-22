@@ -1,0 +1,18 @@
+{{- $c := hugo.Data.content -}}
+<a class="skip" href="#contact">{{ $c.header.a_1 }}</a>
+<div class="intro" aria-hidden="true">
+  <div class="frame" data-k="i-frame"><i></i><i></i><i></i><i></i></div>
+  <div class="intro-word" data-k="i-word"><span style="--i:0">{{ $c.header.span_2 }}</span><span style="--i:1">{{ $c.header.span_3 }}</span><span style="--i:2">{{ $c.header.span_4 }}</span><span style="--i:3">{{ $c.header.span_5 }}</span><span style="--i:4">{{ $c.header.span_6 }}</span><span style="--i:5">{{ $c.header.span_7 }}</span></div>
+</div>
+<canvas class="orb" aria-hidden="true"></canvas>
+<header class="bar">
+  <a class="b logo" href="#top" aria-label="Halden Studio, back to top">{{ $c.header.a_8_html | safeHTML }}</a>
+  <button class="b menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">{{ $c.header.button_9 }}</button>
+  <div class="b clock"><span class="mono">{{ $c.header.span_10 }}</span><span data-clock data-tz="Europe/Lisbon">--:--</span></div>
+</header>
+<nav id="menu" class="menu" aria-label="Main">
+  <a href="#work" style="--i:0">{{ $c.header.a_11_html | safeHTML }}</a>
+  <a href="#services" style="--i:1">{{ $c.header.a_12_html | safeHTML }}</a>
+  <a href="#about" style="--i:2">{{ $c.header.a_13_html | safeHTML }}</a>
+  <a href="#contact" style="--i:3">{{ $c.header.a_14_html | safeHTML }}</a>
+</nav>

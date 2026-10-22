@@ -1,0 +1,14 @@
+{{- $c := hugo.Data.content -}}
+<section class="sec about" id="about" aria-labelledby="about-h">
+    <div class="screen">
+      <div class="head" data-k="a-head" data-snap>
+        <p class="sub" data-reveal>{{ $c.about.p_1 }}</p>
+        <h2 id="about-h" data-reveal style="--d:.08s"><span>{{ $c.about.span_2 }}</span> <span>{{ $c.about.span_3 }}</span></h2>
+      </div>
+      <p class="b a-text" data-k="a-text" data-snap data-words>{{ $c.about.p_4 }}</p>
+      <div class="b a-orb" data-k="a-orb" data-rows="4" data-orb="blob" data-orb-color="white" data-orb-scale=".3"></div>
+      <ul class="tools" aria-label="Tools">
+        <li class="b" data-k="tool">{{ $c.about.li_5 }}</li><li class="b" data-k="tool">{{ $c.about.li_6 }}</li><li class="b" data-k="tool">{{ $c.about.li_7 }}</li><li class="b" data-k="tool">{{ $c.about.li_8 }}</li><li class="b" data-k="tool">{{ $c.about.li_9 }}</li><li class="b" data-k="tool">{{ $c.about.li_10 }}</li>
+      </ul>
+    </div>
+  </section>

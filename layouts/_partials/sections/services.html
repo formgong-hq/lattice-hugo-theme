@@ -1,0 +1,31 @@
+{{- $c := hugo.Data.content -}}
+<section class="sec services" id="services" aria-labelledby="svc-h">
+    <div class="screen">
+      <div class="head" data-k="s-head" data-snap>
+        <p class="sub" data-reveal>{{ $c.services.p_1 }}</p>
+        <h2 id="svc-h" data-reveal style="--d:.08s"><span>{{ $c.services.span_2 }}</span> <span>{{ $c.services.span_3 }}</span> <span>{{ $c.services.span_4 }}</span></h2>
+      </div>
+      <a class="b btn cta" href="#contact" data-k="s-cta" data-rows="1">{{ $c.services.a_5 }}</a>
+      <div class="b rot" data-k="rot" data-rows="5" data-rot>
+        <div class="rot-sq" data-rot-squares></div>
+        <p class="rot-w"><span class="rot-w1" data-rot-a>{{ $c.services.span_6 }}</span><span class="rot-w2" data-rot-b>{{ $c.services.span_7 }}</span></p>
+        <p class="rot-desc" data-rot-d>{{ $c.services.p_8 }}</p>
+      </div>
+      <div class="b s-orb" data-k="s-orb" data-rows="4" data-orb="sphere" data-orb-color="amber" data-orb-scale=".34"><span class="mono" aria-hidden="true">{{ $c.services.span_9 }}</span></div>
+      <div class="stats">
+        <div class="b st st-txt" data-k="st">{{ $c.services.div_10_html | safeHTML }}</div>
+        <div class="b st" data-k="st"><p class="num"><span data-count="40">{{ $c.services.span_11 }}</span>+</p><p class="label">{{ $c.services.p_12 }}</p></div>
+        <div class="b st" data-k="st"><p class="num"><span data-count="9">{{ $c.services.span_13 }}</span></p><p class="label">{{ $c.services.p_14 }}</p></div>
+        <div class="b st" data-k="st"><p class="num"><span data-count="98">{{ $c.services.span_15 }}</span>%</p><p class="label">{{ $c.services.p_16 }}</p></div>
+      </div>
+      <div class="quotes" data-k="quotes" data-rows="3" data-slide aria-label="What clients say">
+        <div class="track">
+          <figure class="q"><blockquote>{{ $c.services.blockquote_17 }}</blockquote><figcaption>{{ $c.services.figcaption_18_html | safeHTML }}</figcaption></figure>
+          <figure class="q"><blockquote>{{ $c.services.blockquote_19 }}</blockquote><figcaption>{{ $c.services.figcaption_20_html | safeHTML }}</figcaption></figure>
+          <figure class="q"><blockquote>{{ $c.services.blockquote_21 }}</blockquote><figcaption>{{ $c.services.figcaption_22_html | safeHTML }}</figcaption></figure>
+          <figure class="q"><blockquote>{{ $c.services.blockquote_23 }}</blockquote><figcaption>{{ $c.services.figcaption_24_html | safeHTML }}</figcaption></figure>
+          <figure class="q"><blockquote>{{ $c.services.blockquote_25 }}</blockquote><figcaption>{{ $c.services.figcaption_26_html | safeHTML }}</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>

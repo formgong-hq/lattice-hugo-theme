@@ -1,0 +1,11 @@
+baseURL = "/"
+title = "Lattice"
+theme = "lattice"
+
+[params]
+  # Where the contact form posts. Formgong by default; any endpoint that accepts a form POST works.
+  formAction = "https://formgong.com/submit"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

@@ -1,0 +1,29 @@
+{{- $c := hugo.Data.content -}}
+<section class="sec work" id="work" aria-labelledby="work-h">
+    <div class="screen">
+      <div class="head" data-k="w-head" data-snap>
+        <p class="sub" data-reveal>{{ $c.work.p_1 }}</p>
+        <h2 id="work-h" data-reveal style="--d:.08s"><span>{{ $c.work.span_2 }}</span> <span>{{ $c.work.span_3 }}</span></h2>
+      </div>
+      <a class="b btn cta" href="#contact" data-k="w-cta" data-rows="1">{{ $c.work.a_4 }}</a>
+      <div class="b p-orb" data-k="p-orb" data-rows="4" data-orb="blob" data-orb-color="teal" data-orb-scale=".34"><span class="mono" data-p-meta aria-hidden="true"></span></div>
+      <div class="b p-shot" data-k="p-shot" data-rows="4" aria-hidden="true">
+        <div class="b mock" data-mock><div class="mock-dots"><i></i><i></i><i></i></div></div>
+        <div class="b phone" data-phone></div>
+      </div>
+      <div class="p-thumbs" data-k="p-thumbs" data-rows="1" data-p-thumbs></div>
+      <div class="b p-text" data-k="p-text" data-rows="5">
+        <div class="p-in" data-p-text>
+          <p class="label"><b data-p-num>{{ $c.work.b_5 }}</b><span data-p-kind>{{ $c.work.span_6 }}</span></p>
+          <p data-p-t1>{{ $c.work.p_7 }}</p>
+          <p data-p-t2>{{ $c.work.p_8 }}</p>
+        </div>
+      </div>
+      <div class="pbar">
+        <button class="b btn" type="button" data-k="b-prev" data-p-prev aria-label="Previous project">←</button>
+        <a class="b btn" href="#contact" data-k="b-link" aria-label="Ask about a project like this">↗</a>
+        <p class="b pb-name" data-k="b-name" aria-live="polite"><span data-p-name>{{ $c.work.span_9 }}</span></p>
+        <button class="b btn" type="button" data-k="b-next" data-p-next aria-label="Next project">→</button>
+      </div>
+    </div>
+  </section>
