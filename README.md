@@ -2,7 +2,7 @@
 
 A dark, motion-led one-page site for a creative developer or a small studio. The contact form posts to Formgong and shows "received" only when the server answers success: true; any other answer shows the server's message.
 
-![Lattice](https://raw.githubusercontent.com/formgong/hugo-theme-lattice/main/images/screenshot.png)
+![Lattice](https://raw.githubusercontent.com/formgong-hq/lattice-hugo-theme/main/images/screenshot.png)
 
 Demo: https://lattice.formgong.com
 
@@ -18,13 +18,13 @@ hugo mod init example.com/site
 # hugo.toml
 [module]
   [[module.imports]]
-    path = "github.com/formgong-hq/hugo-theme-lattice"
+    path = "github.com/formgong-hq/lattice-hugo-theme"
 ```
 
 Or as a git submodule:
 
 ```sh
-git submodule add https://github.com/formgong-hq/hugo-theme-lattice.git themes/lattice
+git submodule add https://github.com/formgong-hq/lattice-hugo-theme.git themes/lattice
 echo 'theme = "lattice"' >> hugo.toml
 ```
 
