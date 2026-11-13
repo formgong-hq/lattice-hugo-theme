@@ -34,8 +34,11 @@ Hugo 0.156.0 or newer, no npm packages and no Hugo extended needed. Posts, tags,
 
 ## Run the example site
 
+The folder must be named `lattice`, the same as `theme` in `exampleSite/hugo.toml`:
+
 ```sh
-cd exampleSite
+git clone https://github.com/formgong-hq/lattice-hugo-theme.git lattice
+cd lattice/exampleSite
 hugo server --themesDir ../..
 ```
 
